@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unidad 8</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" defer async=true href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="js" defer async=true href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    <link rel="js" defer async=true href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+    <style type="text/css">
+    	body{
+    		background:  rgba(0,0,255,0.01);
+    		width: 100%;
+    	}
+
+    	p{
+    		margin: 0;
+    		padding: 10px
+    	}
+
+
+		.acciones{
+			padding: 10px;
+		}
+
+		.modal-propio{
+			position: absolute;
+			top:25%;
+			bottom: 25%;
+			left:25%;
+			right: 25%;
+			z-index: 10;
+			border-radius: 5px;
+		}
+
+		.modal-propio p{
+			margin-top: 15%;
+			text-align: center;
+		}
+
+		.rojo{
+			background: red;
+		}
+
+		.verde{
+			background: green;
+			color:white;
+		}
+    </style>
+</head>
+</head>
+<body>
+    <div class="container">
+		<form id="formulario" class="form-group col-md-6" method="POST">
+			<fieldset>
+				<legend>Inicio de sesión</legend>
+				<div class="col-md-12">
+					<label for="#user">Usuario</label>
+					<input type="text" name="user" id="user" placeholder="arribaDelAconcagua@gmail.com">
+				</div>
+				<div class="col-md-12">
+					<label for="#pass">Contraseña</label>
+					<input type="password" id="pass" name="password">
+				</div>
+				<div class="col-md-12">
+					<button type="submit"  class="btn btn-primary">Ingresar</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<script type="text/javascript" src="./js/control.js"></script>
+</body>
+</html>
